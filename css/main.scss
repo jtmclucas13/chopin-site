@@ -4,17 +4,79 @@
 @charset "utf-8";
 
 
+@font-face {
+  font-family: 'Raleway Lightest';
+  src: url('../fonts/raleway-extralight-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-extralight-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-extralight-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-extralight-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-extralight-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-thin-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-thin-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('../fonts/raleway-semibold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-semibold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-semibold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Take Cover';
+  src: url('../fonts/take_cover-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/take_cover-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/take_cover-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/take_cover-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/take_cover-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/take_cover-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/merriweather_light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/merriweather_light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather_light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather_light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/merriweather_light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather_light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Capture It';
+  src: url('../fonts/capture_it-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/capture_it-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/capture_it-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/capture_it-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/capture_it-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/capture_it-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Merriweather",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;
+$base-font-size:   1.6em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$sans-font-family-light: "Raleway Lightest","Arial Narrow",Arial,sans-serif;
+$sans-font-family-normal: "Raleway",Futura,"Trebuchet MS",Arial,sans-serif;
+$sans-font-family-bold: "Raleway Bold","Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
+$display-font-family: "Take Cover",Copperplate,"Copperplate Gothic Light",fantasy;
+$alt-display-font-family: "Capture It",Copperplate,"Copperplate Gothic Light",fantasy;
+
+$spacing-unit:     5%;
+
+$text-color:       #000;
+$red-color:        #ff0000;
+$background-color: #ffffff;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -22,9 +84,9 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    100%;
 
-$on-palm:          600px;
+$on-palm:          768px;
 $on-laptop:        800px;
 
 
