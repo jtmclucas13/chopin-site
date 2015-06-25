@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-    font-family: $sans-font-family-normal;
+    z-index: 100;
+    font-family: $sans-font-family-light;
     border-bottom: 1px solid $grey-color-light;
     background-color:#fff;
     position: fixed;
@@ -132,6 +133,37 @@
     }
 }
 
+/**
+* Homepage
+**/
+.homepage-main-section{
+    position: relative;
+    width: 100%;
+}
+.homepage-heading{
+    font-size: 8vw;
+    font-family: $display-font-family;
+    width: 100%;
+    color: #fff;
+    line-height: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 20%;
+    text-align: right;
+}
+.homepage-main-image{
+    width: 100%;
+}
+.showInfoRow{
+    width: 100%;
+    li{
+        width: 33%;
+        float: left;
+        font-family: $sans-font-family-normal;
+        font-size: $base-font-size + 2.5em;
+        text-align: center;
+    }
+}
 
 
 /**
@@ -208,12 +240,18 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    margin-top: 65px;
 }
 
-.page-heading {
-    font-size: 20px;
+@include media-query($on-palm){
+    .page-content{
+        margin-top: 45px;
+    }
 }
+
+/*.page-heading {
+    font-size: 20px;
+}*/
 
 .post-list {
     margin-left: 0;

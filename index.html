@@ -2,22 +2,18 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home clearfix">
+  
+  <div class="homepage-main-section">
+    <img class="homepage-main-image" src="{{ "/images/wysocka-on-piano-cropped.jpg" | prepend: site.baseurl }}" alt="">
+    <h2 class="homepage-heading">Chopin <br>Without <br>Piano</h2>
+  </div>
+  
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <ul class="showInfoRow clearfix">
+    <li>June 12, 2015</li>
+    <li>7:00PM</li>
+    <li>FringeArts</li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -11,3 +11,7 @@ $("#menu-icon").click(function(event){
 	}
 	return false;
 });
+
+/*$(window).resize(function(){
+	$(".homepage-heading").css("font-size", $(window).width() / 100);
+});*/
