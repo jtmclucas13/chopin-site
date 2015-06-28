@@ -24,6 +24,11 @@
             max-width:         calc(#{$content-width} - (#{$spacing-unit}));
             padding-right: $spacing-unit / 2;
             padding-left: $spacing-unit / 2;
+            
+        /* 
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;*/
         }
     }
 }
@@ -170,11 +175,26 @@
  * Site footer
  */
 .site-footer {
+    font-family: $sans-font-family-light;
     border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    position: static;
+    z-index: 100;
+    background-color:#fff;
+    /*top: px; */ 
+    width: 100%;
 }
 
-.footer-heading {
+.site-footer-text {
+    font-family: $sans-font-family-light;
+    font-size: 0.5em;
+    width: 30%
+    text-align: center;
+    
+}
+
+/*.footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
@@ -212,6 +232,7 @@
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
+*/
 
 @include media-query($on-laptop) {
     .footer-col-1,
