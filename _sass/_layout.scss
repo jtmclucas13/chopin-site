@@ -5,6 +5,11 @@
     width: 40%;
     margin: 2.5% 5%;
     float: left;
+    @include media-query($on-palm){
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
 }
 
 /**
