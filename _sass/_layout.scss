@@ -1,3 +1,12 @@
+.row{
+    width: 100%;
+}
+.half-row{
+    width: 40%;
+    margin: 2.5% 5%;
+    float: left;
+}
+
 /**
  * Site header
  */
@@ -168,6 +177,43 @@
         font-size: $base-font-size + 2.5em;
         text-align: center;
     }
+    @include media-query($on-palm){
+        li{
+            font-size: $base-font-size + 0.75em;
+        }
+    }
+    @include media-query($on-micro){
+        li{
+            font-size: $base-font-size;
+        }
+    }
+}
+.home h3{
+    text-align: center;
+    font-family: $alt-display-font-family;
+    font-size: $base-font-size + 6em;
+    margin-bottom: 0%;
+}
+.home h4{
+    font-family: $alt-display-font-family;
+    font-size: $base-font-size + 1.5em;
+}
+.home p{
+    font-size: $base-font-size;
+}
+#panelForm textarea{
+    width: 100%;
+    resize: none;
+}
+#panelForm .submit{
+    background-color: $red-color;
+    font-family: $alt-display-font-family;
+    float:right;
+    color: #fff;
+    border: 1px solid black;
+    margin-top: 1%;
+    width: 33%;
+    font-size: $base-font-size + 0.5em;
 }
 
 
@@ -189,7 +235,7 @@
 .site-footer-text {
     font-family: $sans-font-family-light;
     font-size: 0.5em;
-    width: 30%
+    width: 30%;
     text-align: center;
     
 }

@@ -16,4 +16,36 @@ layout: default
     <li>FringeArts</li>
   </ul>
 
+  <div class="row">
+  	<h3>This Is Chopin</h3>	
+  </div>
+  
+  <div class="row">
+  	<img class="homepage-main-image" src="{{ "/images/this-is-chopin.jpg" | prepend: site.baseurl }}" alt="">
+  </div>
+
+  <div class="half-row">
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ex doloribus voluptate mollitia ut! Aspernatur tenetur architecto, cum eaque nulla dolores illo, commodi iure, deleniti similique quisquam laboriosam culpa alias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat exercitationem quo ad officiis dolor tempore, delectus, temporibus deserunt, id labore earum necessitatibus consectetur dolorum nesciunt veniam itaque possimus quibusdam incidunt.</p>
+  </div>
+
+  <div class="half-row">
+  	<h4>Ask a Question To The Creators</h4>
+  	<p>A selection of these questions will be asked at live panels with Michal Zadara and others on July 12th, 7:00pm at FringeArts.</p>
+  	<form id="panelForm" action="javascript: submitFormData()" method="POST">
+  		<textarea id="response" name="response" rows="6"></textarea>
+  		<input class="submit" type="submit" value="submit">
+	</form>
+	<script>
+		function submitFormData(){
+			var response = $('#response').val();
+			$.ajax({
+		    	url: "https://docs.google.com/forms/d/1QtTKrpIyxpCUg-kidnGAKDx0GAivVKcu8-lODopXLN4/formResponse",
+		    	data: {"entry_273054048" : response},
+		    	type: "POST",
+		    	dataType: "xml"
+			});
+		}
+	</script>
+  </div>
+
 </div>
