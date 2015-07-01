@@ -11,15 +11,38 @@
     </div>
 
     <div class="trigger clearfix">
-          <a href="{{ "/why-chopin/" | prepend: site.baseurl }}" class="page-link">Why Chopin?</a>
-          <a href="{{ "/why-poland/" | prepend: site.baseurl }}" class="page-link">Why Poland?</a>
-          <a href="{{ "/why-centrala/" | prepend: site.baseurl }}" class="page-link">Why CENTRALA?</a>
-          <a href="{{ "/why-now/" | prepend: site.baseurl }}" class="page-link">Why Now?</a>
-        <!--{% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}-->
+      <div class="nav-level-1 clearfix">
+        <a href="{{ "/why-chopin/" | prepend: site.baseurl }}" class="page-link">Why Chopin?</a>
+        <a href="{{ "/why-poland/" | prepend: site.baseurl }}" class="page-link">Why Poland?</a>
+        <a href="{{ "/why-centrala/" | prepend: site.baseurl }}" class="page-link">Why CENTRALA?</a>
+        <a href="{{ "/why-now/" | prepend: site.baseurl }}" class="page-link">Why Now?</a>
+      </div>
+      <div class="nav-level-2 clearfix">
+        {% if page.title == "Why Chopin?" %}
+          <a href="#first" class="page-link">First</a>
+          <a href="#second" class="page-link">Second</a>
+          <a href="#third" class="page-link">Third</a>
+          <a href="#fourth" class="page-link">Fourth</a>
+        {% endif %}
+        {% if page.title == "Why Poland?" %}
+          <a href="#first" class="page-link">First</a>
+          <a href="#second" class="page-link">Second</a>
+          <a href="#third" class="page-link">Third</a>
+          <a href="#fourth" class="page-link">Fourth</a>
+        {% endif %}
+        {% if page.title == "Why CENTRALA?" %}
+          <a href="#first" class="page-link">First</a>
+          <a href="#second" class="page-link">Second</a>
+          <a href="#third" class="page-link">Third</a>
+          <a href="#fourth" class="page-link">Fourth</a>
+        {% endif %}
+        {% if page.title == "Why Now?" %}
+          <a href="#first" class="page-link">First</a>
+          <a href="#second" class="page-link">Second</a>
+          <a href="#third" class="page-link">Third</a>
+          <a href="#fourth" class="page-link">Fourth</a>
+        {% endif %}
+      </div>
     </div>
 
 </header>
