@@ -17,6 +17,7 @@
         <a href="{{ "/why-centrala/" | prepend: site.baseurl }}" class="page-link">Why CENTRALA?</a>
         <a href="{{ "/why-now/" | prepend: site.baseurl }}" class="page-link">Why Now?</a>
       </div>
+      {% if page.title != "Chopin Without Piano" %}
       <div class="nav-level-2 clearfix">
         {% if page.title == "Why Chopin?" %}
           <a href="#first" class="page-link">First</a>
@@ -43,6 +44,7 @@
           <a href="#fourth" class="page-link">Fourth</a>
         {% endif %}
       </div>
+      {% endif %}
     </div>
 
 </header>

@@ -102,16 +102,11 @@
 }
 
 .nav-level-2{
-    background-color: $grey-color-dark;
+    background-color: $grey-color-light;
     padding: 1% 0%;
     width: 100%;
     display: block;
-    .page-link{
-        color: $grey-color;
-        &:hover{
-            color: $red-color;
-        }
-    }
+    border-top: 1px solid black;
 }
 
 .trigger {
@@ -273,6 +268,37 @@
 }
 .site-footer-links {
     margin: 2.5% 0%;
+}
+
+/**
+* Categorical Selection
+**/
+.selectors li{
+    width: 18.5%;
+    margin: 2.5%;
+    float: left;
+    border: 5px solid #fff;
+    @include media-query($on-palm){
+        width: 43%;
+    }
+    @include media-query($on-micro){
+        width: 93%;
+    }
+}
+.activeSelect{
+    border: 5px solid $red-color !important;
+}
+.descriptors{
+    margin-bottom: 2.5%;
+    li{
+        display: none;
+        width: 90%;
+        margin: 0% 5%;
+        font-size: $base-font-size;
+    }
+}
+.activeDisplay{
+    display: block !important;
 }
 
 
