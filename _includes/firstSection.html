@@ -1,0 +1,17 @@
+{% for item in site.data.firstSection %}
+	{% if item.name == include.section %}
+		<div class="row first-section" id="{{ item.id }}">
+			<div class="half-row">
+				<h4>{{ item.name }}</h4>
+				{% for url in item.urls %}
+					<img src="{{ url.link | prepend: site.baseurl }}" alt="">
+				{% endfor %}
+			</div>
+			<div class="half-row">
+				{% for paragraph in item.paragraphs %}
+					<p>{{ paragraph.text }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+{% endfor %}

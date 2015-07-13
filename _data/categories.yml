@@ -1,0 +1,23 @@
+- name: Selector 1
+  id: 100
+  members:
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+
+- name: Selector 2
+  id: 200
+  members:
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: /images/wysocka-on-piano-cropped.jpg
+      descriptor: "4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."

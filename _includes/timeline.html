@@ -1,0 +1,25 @@
+ {% for item in site.data.timelines %}
+	{% if item.name == include.timeline %}
+		<div class="row timeline" id="{{ item.id }}">
+			<h3>{{ item.name }}</h3>
+			<ul class="half-row left-section clearfix">
+				{% for member in item.leftMembers %}
+					{% if member.type == "image" %}
+						<li><img class="homepage-main-image" src="{{ member.url | prepend: site.baseurl }}" alt=""></li>
+					{% else if member.type == "video" %}
+						<li><iframe src="{{ member.url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<ul class="half-row right-section clearfix">
+				{% for member in item.rightMembers %}
+					<li class="clearfix">
+						<div class="rectangle"></div>
+						<h4>{{ member.date }}</h4>
+						<p>{{ member.text }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+{% endfor %}

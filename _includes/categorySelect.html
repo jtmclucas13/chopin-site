@@ -1,25 +1,26 @@
-{% for testFiles in site.data.categorySelect %}
-{% assign testItem = testFiles[1] %}
-<div class="row categorySelect" id="{{ testItem.id }}">
-	<ul class="selectors clearfix">
-		{% for member in testItem.members %}
-			{% if forloop.index == 1 %}
-				<li class="activeSelect"><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
-			{% else %}
-				<li><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+{% for item in site.data.categories %}
+	{% if item.name == include.select %}
+		<div class="row categorySelect" id="{{ item.id }}">
+			<h3>{{ item.name }}</h3>
+			<ul class="selectors clearfix">
+				{% for member in item.members %}
+					{% if forloop.index == 1 %}
+						<li class="activeSelect"><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
+					{% else %}
+						<li><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
 
-	<ul class="descriptors clearfix">
-		{% for member in testItem.members %}
-			{% if forloop.index == 1 %}
-				<li class="activeDisplay"><p>{{ member.descriptor }}</p></li>
-			{% else %}
-				<li><p>{{ member.descriptor }}</p></li>
-			{% endif %}
-		{% endfor %}
-	</ul>
-</div>
-
+			<ul class="descriptors clearfix">
+				{% for member in item.members %}
+					{% if forloop.index == 1 %}
+						<li class="activeDisplay"><p>{{ member.descriptor }}</p></li>
+					{% else %}
+						<li><p>{{ member.descriptor }}</p></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
 {% endfor %}
