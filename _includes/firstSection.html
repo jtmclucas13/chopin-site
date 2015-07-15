@@ -1,6 +1,10 @@
 {% for item in site.data.firstSection %}
 	{% if item.name == include.section %}
-		<div class="row first-section" id="{{ item.id }}">
+		{% if include.invert == "yes" %}
+			<div class="row first-section-inverted" id="{{ include.id }}">
+		{% else %}
+			<div class="row first-section" id="{{ include.id }}">
+		{% endif %}
 			<div class="half-row">
 				<h4>{{ item.name }}</h4>
 				{% for url in item.urls %}

@@ -5,5 +5,10 @@ permalink: /why-chopin/
 ---
 
 <div id="top" class="clearfix">
-	{% include firstSection.html section="Why Chopin?"%}
+	{% include firstSection.html section="Why Chopin?" id="first" %}
+	{% include firstSection.html section="Why Chopin?" id="" invert="yes" %}
+	{% include categorySelect.html select="Chopin's Contemporaries" id="second" %}
+	{% include categorySelect.html select="Musical Terms of The Time" id="third" invert="yes" %}
+	{% include timeline.html timeline="Chopin's Biography" id="fourth" %}
+	{% include timeline.html timeline="Chopin's Biography" id="" invert="yes" %}
 </div>

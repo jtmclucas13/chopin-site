@@ -1,6 +1,10 @@
  {% for item in site.data.timelines %}
 	{% if item.name == include.timeline %}
-		<div class="row timeline" id="{{ item.id }}">
+		{% if include.invert == "yes" %}
+			<div class="row timeline invert" id="{{ include.id }}">
+		{% else %}
+			<div class="row timeline" id="{{ include.id }}">
+		{% endif %}
 			<h3>{{ item.name }}</h3>
 			<ul class="half-row left-section clearfix">
 				{% for member in item.leftMembers %}

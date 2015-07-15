@@ -12,6 +12,24 @@
         margin-bottom: 0%;
     }
 }
+span{
+    font-weight: 800;
+    text-decoration: underline;
+}
+.polishHover{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 1% 5%;
+    text-decoration: none;
+}
+.invert{
+    background: #000;
+    color: #fff;
+    .right-section .rectangle{
+        background: #fff;
+    }
+}
 
 /**
  * Site header
@@ -98,12 +116,10 @@
 .nav-level-1{
     width: 100%;
     background-color: $grey-color-light;
-    padding: 1% 0%;
 }
 
 .nav-level-2{
     background-color: $grey-color-light;
-    padding: 1% 0%;
     width: 100%;
     display: block;
     border-top: 1px solid black;
@@ -118,6 +134,15 @@
         width: 25%;
         float: left;
         text-align: center;
+        padding: 1% 0%;
+    }
+}
+
+.activeNavLink{
+    background: #000;
+    color: #fff;
+    &:hover{
+        color: #fff;
     }
 }
 
@@ -144,9 +169,14 @@
         padding: 10px 15%;
     }
     .trigger .page-link{
+        font-size: $base-font-size - 0.2em;
+    }
+}
+
+@include media-query($on-micro){
+    .trigger .page-link{
         width: 100%;
-        margin: 5% 0%;
-        font-size: $base-font-size;
+        margin: 2.5% 0%;
     }
 }
 
@@ -277,7 +307,11 @@
     background: #000;
     color: #fff;
 }
-.first-section .half-row{
+.first-section-inverted{
+    background: #fff;
+    color: #000;
+}
+.first-section .half-row, .first-section-inverted .half-row{
     margin-bottom: 5%;
     @include media-query($on-palm){
         width: 40%;
@@ -286,7 +320,7 @@
         width: 90%;
     }
 }
-.first-section h4{
+.first-section h4, .first-section-inverted h4{
     font-size: $base-font-size + 2.5em;
     font-family: $alt-display-font-family;
     letter-spacing: 3px;
@@ -298,13 +332,13 @@
         text-align: center;
     }
 }
-.first-section img{
+.first-section img, .first-section-inverted img{
     margin-bottom: 5%;
     @include media-query($on-palm){
         margin-bottom: 10%;
     }
 }
-.first-section p{
+.first-section p, .first-section-inverted p{
     font-size: $base-font-size;
     margin-top: 10%;
     @include media-query($on-palm){
@@ -331,6 +365,14 @@
         width: 40%;
         border: 3px solid #fff;
     }
+    h4{
+        text-align: center;
+        font-size: 2.5vw;
+        font-family: $alt-display-font-family;
+        @include media-query($on-palm){
+            font-size: 5vw;
+        }
+    }
 }
 .activeSelect{
     border: 5px solid $red-color !important;
@@ -341,12 +383,15 @@
 .descriptors{
     margin-bottom: 2.5%;
     width: 80%;
-    margin: 0% 10%;
+    margin: 0% 10% 3% 10%;
     li{
         display: none;
-        width: 90%;
-        font-size: $base-font-size - 0.3em;
+        width: 100%;
+        font-size: $base-font-size;
         text-align: justify;
+        @include media-query($on-micro){
+            font-size: $base-font-size - 0.2em;
+        }
     }
 }
 .activeDisplay{

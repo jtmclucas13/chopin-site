@@ -1,13 +1,25 @@
 {% for item in site.data.categories %}
 	{% if item.name == include.select %}
-		<div class="row categorySelect" id="{{ item.id }}">
+		{% if include.invert == "yes" %}
+			<div class="row categorySelect invert" id="{{ include.id }}">
+		{% else %}
+			<div class="row categorySelect" id="{{ include.id }}">
+		{% endif %}
 			<h3>{{ item.name }}</h3>
 			<ul class="selectors clearfix">
 				{% for member in item.members %}
-					{% if forloop.index == 1 %}
-						<li class="activeSelect"><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
-					{% else %}
-						<li><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
+					{% if item.type == "image" %}
+						{% if forloop.index == 1 %}
+							<li class="activeSelect"><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
+						{% else %}
+							<li><img class="homepage-main-image" src="{{ member.selector | prepend: site.baseurl }}" alt=""></li>
+						{% endif %}
+					{% else if item.type == "text" %}
+						{% if forloop.index == 1 %}
+							<li class="activeSelect"><h4>{{ member.selector }}</h4></li>
+						{% else %}
+							<li><h4>{{ member.selector }}</h4></li>
+						{% endif %}
 					{% endif %}
 				{% endfor %}
 			</ul>

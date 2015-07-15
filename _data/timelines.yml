@@ -1,17 +1,27 @@
-- name: Timeline 1
+- name: Chopin's Biography
   id: 1
   leftMembers:
-    - type: image
-      url: /images/wysocka-on-piano-cropped.jpg
-    - type: video
-      url: https://player.vimeo.com/video/80537557
   rightMembers:
-    - date: "January 1, 1963"
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    - date: "January 2, 1964"
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    - date: "January 3, 1965"
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    - date: "March 1, 1810"
+      text: "Fryderyk <span hoverText=\'POLISH (pole-ISH)\'>Franciszek</span> (French: Frédéric François) Chopin is born, the second child of four. His father, Mikolaj, is a Frenchman who moved to Poland when he was sixteen. He will never return to France for fear of being conscripted into the army during the French Revolution. Justyna, his mother, likely met Mikolaj when she worked for the Skarbeks. Mikolaj is employed as French teacher to the Skarbek children, including Fryderyk Skarbek, Fryderyk Chopin’s namesake and godfather."
+    - date: "July 1810"
+      text: "The Skarbeks fall into debt and Mikolaj moves the Chopin family to Warsaw after finding a job post teaching French and literature at the Warsaw Lyceum. Fryderyk is surrounded by music early on in his life - Mikolaj plays the flute and violin, and Justyna plays the piano. Even though Mikolaj teaches French, he considers himself a Pole through and through, and insists on using Polish in the Chopin household."
+    - date: "1816-1821"
+      text: "Young Fryderyk gets piano lessons from his first teacher, Wojciech Źywny. In 1817, he composes his first pieces at the age of seven: two polonaises, in B-flat Major and g minor. In 1821, his Polonaise in A-flat Major is dedicated to Źywyn as a name-date gift. That same year, Źywny insists that Chopin find a new teacher, having surpassed his own abilities."
+    - date: "Fall 1826"
+      text: "Chopin begins a three-year course at Warsaw Conservatory, studying under Józef Elsner. He begins to compose and perform in earnest. After finishing his studies in 1829, the same year that both concertos were composed, Chopin embarks on a tour of western Europe that begins in Vienna."
+    - date: "November 1830"
+      text: "The uprising of partitioned Poland against the Russian Empire forces Chopin’s travel companion Tytus Woyciechowski to return to Poland to enlist. By October 1831, disheartened by the size of the Russian troops, the Polish troops have surrendered and Poland is declared to be a part of Russia. That fall, Chopin travels alone from Vienna to Paris, deeply nostalgic for his homeland and frustrated by the failure of the November 1830 Uprising. He will never return to Poland."
+    - date: "1831"
+      text: "Chopin’s life in Paris as a composer and performer begins. He meets the Rothschild family, who introduces him to private salons of the Paris aristocracy - here, his intimate piano playing has an appropriate venue. He prefers playing privately in salons to giving public concerts. As he becomes well-known among Parisian social circles, Chopin becomes financially independent through teaching piano and publishing compositions, and no longer has to perform publicly often. Through his lifetime, Chopin would only give around thirty public concerts."
+    - date: "1831-1836"
+      text: "Chopin becomes acquainted with the composers Hector Berlioz, Franz Liszt, and Ferdinand Hiller, among others, during his time in Paris. In Düsseldorf, Germany, he meets Felix Mendelssohn, and in Leipzig, he meets Clara and Robert Schumann, who think of him quite highly as a musician. In 1836, Chopin proposes to Maria Wodzínska, an artist who studied composition with John Field. Her mother, Countess Theresa Wodzínski, approves of the marriage based on Chopin’s fame and popularity, but her father, the Count Wincenty, finds Chopin’s health to be too poor. The same year, Chopin meets Aurore Dupin, penname George Sand. Although they are not immediately attracted to each other, by the end of the June 1838 they are in a relationship."
+    - date: "November 8, 1838"
+      text: "Sand and Chopin, along with her children, vacation to Majorca in Spain, but they fail to find warm accommodations when the people of Majorca, who are mostly Catholic, find out that they are not married. Chopin’s poor health is exacerbated by the bad weather, and they leave in February 1839. Sand and Chopin do not live together permanently, and in 1842, they move to adjacent buildings in the Square d’Orléans in the 9th arrondissement of Paris."
+    - date: "1842 - 1849"
+      text: "Chopin’s health is in decline, and as his compositional output shrinks and he teaches less, he struggles financially. After Sand and Chopin break ties in 1847, they never see each other again. His last concert ever takes place in London’s Guildhall on November 16, 1848, for the benefit of Polish refugees of the political revolutions."
+    - date: "October 17, 1849"
+      text: "Chopin passes away in the early morning. He has requested his body to be opened after death, to ensure that he will not be buried alive and for his heart to be returned to Warsaw. His cause of death is determined to be tuberculosis, although in the present day that has been under discussion - Chopin’s poor health throughout his entire life suggests other ailments. His funeral is two weeks later, on October 30, and more than 3,000 people show up to the Church of the Madeleine in Paris for the event."
 
 - name: Timeline 2
   id: 2

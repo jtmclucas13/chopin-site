@@ -1,23 +1,19 @@
-- name: Selector 1
+- name: Chopin's Contemporaries
   id: 100
+  type: image
   members:
     - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+      descriptor: "Franz Liszt: Chopin’s good acquaintance and rival, Franz Liszt, was a Hungarian piano virtuoso and composer. He was so famous during his time that he became wealthy enough to be the benefactor of such distinguished composers as Hector Berlioz, Richard Wagner, and Edvard Grieg. Chopin and Liszt both lived in France at the same time and got to know each other well. Through Liszt’s social circles, Chopin met the woman with whom he had an eleven-year relationship, Aurore Dupin, also known as the writer George Sand. Liszt had an affair with the Countess Marie d’Agoult, with whom he had three children, Blandine, Cosima (who ended up marrying composer Richard Wagner) and Daniel. "
     - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+      descriptor: "George Sand: George Sand is the pseudonym of the French writer and proto-feminist Aurore Dupin, who achieved notoriety for, among other things, wearing men’s clothes in public despite the gender expectations of the 19th century upper class. In 1831, she left her husband of nine years for a period of “romantic rebellion” and eventually met Chopin at a party thrown by Franz Liszt’s mistress, the Countess d’Agoult. Even though Chopin and Sand’s affair lasted more than a decade, from 1838 to 1849, his poor health caused her to feel more like a nurse than a lover, and they eventually severed ties after she wrote her novel Lucrezia Floriani, in which an actress takes care of a sickly prince. Because both Chopin and Sand were famous in their day, it is hard to confirm the facts of their relationship against the myriad of rumors that have cropped out over the years."
 
-- name: Selector 2
+- name: Musical Terms of The Time
   id: 200
+  type: text
   members:
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
-    - selector: /images/wysocka-on-piano-cropped.jpg
-      descriptor: "4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptates quis impedit quam, quo et? Expedita veritatis quibusdam labore magni perspiciatis, blanditiis eligendi asperiores alias sint voluptate. Dolores neque, labore."
+    - selector: Mazurkas
+      descriptor: "Mazurkas: Chopin wrote over 50 of these traditional Polish dances during his lifetime. They tend to be in triple meter, with an accented second or third beat. This trademark syncopation distinguishes mazurkas from other dances. Chopin’s highly personal interpretations of the Polish mazurka have been described as national music and confused to be representative of authentic Polish folk music. While the term “folk” evokes images of a rural countryside, Chopin grew up in the city of Warsaw and was more likely inspired by the urban music scene."
+    - selector: Waltzes
+      descriptor: 'Waltzes: These pieces in triple meter were originally dances for the ballroom, but Chopin retooled waltzes for the concert hall. There are around twenty published waltzes, including ones published posthumously, but the actual number of waltzes that Chopin composed is more than thirty. One of the most popular waltzes, known as the Minute Waltz (1847), is also known as “La valse du petit chien” or “The Little Dog Waltz.” The dog in question may have been Marquis, a puppy who belonged to Chopin’s lover George Sand, and who Chopin mentions in a letter to Sand dated November 25, 1846: “Please thank Marquis for missing me and for sniffing at my door.” (selected correspondence of fredyryk chopin 217)'
+    - selector: Concertos
+      descriptor: "Concertos: Chopin wrote just two concertos, both for the piano. Concertos feature an instrument accompanied by an ensemble, usually an orchestra. Both of Chopin’s piano concertos were written and published in 1830 - in fact, what is now titled the Second Piano Concerto was actually written first! Chopin wrote it before he finished school, and premiered the concerto as soloist in March 1830. Piano Concerto No. 1 was premiered during one of Chopin’s “farewell” concerts in October of the same year before leaving Poland. These pieces are remarkable because they are part of a very small collection of music that Chopin wrote that was not for solo piano."
